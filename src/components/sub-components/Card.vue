@@ -75,7 +75,7 @@ const gotEatDay = reactive<Eatday>({
 
     if (!dateExists.value) {
       try {
-        const postResponse = await axios.post(url, requestData);
+        const postResponse = await axios.post(url, requestData)
         console.log(postResponse);
       } catch (postError) {
         console.log(postError);
